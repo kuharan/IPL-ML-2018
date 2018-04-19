@@ -1,0 +1,8 @@
+* To predict the final result with accuracy.
+
+
+ToDo:
+decide the ML alg.
+consider few variables at start.
+UI with list menus - values to be populated from the dataset.
+
