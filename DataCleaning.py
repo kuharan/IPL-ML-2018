@@ -2,7 +2,7 @@ import csv
 
 # Read the file Matches Data set.
 def read_csv() -> list:
-    with open('./matches.csv', newline='') as rawFile:
+    with open('./Dataset/matches.csv', newline='') as rawFile:
         reader = csv.reader(rawFile)
         # for row in reader:
         #     print(row)
@@ -34,7 +34,7 @@ def map_string_to_int(s: list) -> object:
 
 def write_csv(x: list) -> object:
     # Write the File in a new File
-    clean_file = open("./matches_cleaned.csv", 'w', newline='')
+    clean_file = open("./Dataset/matches_cleaned.csv", 'w', newline='')
     with clean_file:
         writer = csv.writer(clean_file)
         writer.writerows(x)
