@@ -1,0 +1,585 @@
+/*
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+*/
+
+/*--reset--*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+nav ul,
+nav li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*--start editing from here--*/
+
+a {
+    text-decoration: none;
+}
+
+.txt-rt {
+    text-align: right;
+}
+
+/* text align right */
+
+.txt-lt {
+    text-align: left;
+}
+
+/* text align left */
+
+.txt-center {
+    text-align: center;
+}
+
+/* text align center */
+
+.float-rt {
+    float: right;
+}
+
+/* float right */
+
+.float-lt {
+    float: left;
+}
+
+/* float left */
+
+.clear {
+    clear: both;
+}
+
+/* clear float */
+
+.pos-relative {
+    position: relative;
+}
+
+/* Position Relative */
+
+.pos-absolute {
+    position: absolute;
+}
+
+/* Position Absolute */
+
+.vertical-base {
+    vertical-align: baseline;
+}
+
+/* vertical align baseline */
+
+.vertical-top {
+    vertical-align: top;
+}
+
+/* vertical align top */
+
+nav.vertical ul li {
+    display: block;
+}
+
+/* vertical menu */
+
+nav.horizontal ul li {
+    display: inline-block;
+}
+
+/* horizontal menu */
+
+img {
+    max-width: 100%;
+}
+
+/*--end reset--*/
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 100%;
+    background: url(../images/banner.jpg)no-repeat center top;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    /* background-attachment: fixed; */
+    background-position: center;
+}
+
+.register-form-w3layouts {
+    box-sizing: border-box;
+    padding: 3vw;
+    background: rgba(0, 0, 0, 0.4);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 4vw;
+    margin: 3.5vw 0vw 2vw;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #fff;
+    text-shadow: 3px 3px 3px #1d1d1d;
+    letter-spacing: 5px;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2.sub-heading-agileits,
+h3.sub-heading-agileits {
+    text-align: center;
+    font-size: 24px;
+    color: #23b4cc;
+    text-transform: capitalize;
+    margin-bottom: 14px;
+    padding: 0.4vw;
+    padding: 7px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.86);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.radio-section {
+    text-align: left;
+    margin: 0.7em 0;
+}
+
+.radio-section h6 {
+    display: inline;
+    margin-top: 10px;
+    color: #82bb3b;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: .7em;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.radio-section ul {
+    display: block;
+}
+
+.radio-buttons-w3-agileits li input[type="radio"] {
+    cursor: pointer;
+}
+
+.radio-buttons-w3-agileits li label {
+    color: #23b4cc;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*-- form --*/
+
+
+@media(min-width:481px) {
+    .main-flex-w3ls-sectns {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+    }
+    .form-w3-agile-text1,
+    .form-w3-agile-text2 {
+        flex-basis: 48.5%;
+        -webkit-flex-basis: 48.5%;
+    }
+}
+
+.register-form-w3layouts input[type="text"],
+.register-form-w3layouts input[type="email"],
+.register-form-w3layouts textarea,
+select.form-control,
+input#datepicker {
+    width: 100%;
+    font-weight: 300;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    padding: 10px 10px;
+    outline: none;
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.27);
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.register-form-w3layouts textarea {
+    resize: none;
+    height: 100px;
+}
+
+.field-agileinfo-spc {
+    margin-bottom: 1em;
+}
+
+.form-w3-agile-text {
+    width: 100%;
+}
+
+select.form-control option {
+    background: #000;
+}
+
+.register-form-w3layouts input[type="submit"],
+.register-form-w3layouts input[type="reset"] {
+    text-transform: capitalize;
+    background: #82bb3b;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    width: 49%;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-top: 1em;
+    float: left;
+    outline: none;
+    letter-spacing: 1px;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    transition: .5s all;
+    cursor: pointer;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.register-form-w3layouts input[type="submit"] {
+    background: #23b4cc;
+}
+
+.register-form-w3layouts input[type="reset"] {
+    float: right;
+}
+
+.register-form-w3layouts input[type="submit"]:hover {
+    background: #82bb3b;
+    color: #fff;
+}
+
+.register-form-w3layouts input[type="reset"]:hover {
+    background: #23b4cc;
+    color: #fff;
+}
+
+.register-form-w3layouts ::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.register-form-w3layouts :-moz-placeholder {
+    /* Firefox 18- */
+    color: #fff;
+}
+
+.register-form-w3layouts ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff;
+}
+
+.register-form-w3layouts :-ms-input-placeholder {
+    color: #fff;
+}
+
+/*-- checkbox --*/
+
+.register-form-w3layouts label {
+    font-size: 13.5px;
+    color: rgba(255, 255, 255, 0.83);
+    letter-spacing: 2px;
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 5px;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+ul.radio-buttons-w3-agileits li {
+    display: inline-block;
+    margin: .8em 2em 0em .3em;
+}
+
+/*-- //checkbox --*/
+
+/*--// form --*/
+
+/*--copyright--*/
+
+.copyright {
+    margin: 2em 1em;
+    text-align: center;
+}
+
+.copyright p {
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px 2px #000;
+    font-weight: 400;
+}
+
+.copyright p a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.copyright p a:hover {
+    color: #82bb3b;
+}
+
+/*--//copyright--*/
+
+/*--responsive--*/
+
+@media(max-width:1366px) {
+    h1 {
+        font-size: 4.5vw;
+    }
+}
+
+@media(max-width:1024px) {
+    h1 {
+        font-size: 6vw;
+    }
+    .register-form-w3layouts {
+        padding: 4vw;
+    }
+}
+
+@media(max-width:900px) {
+    h1 {
+        font-size: 6.3vw;
+        margin: 5vw 0vw 3vw;
+    }
+    .radio-section h6 {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:768px) {
+    h1 {
+        font-size: 6.8vw;
+    }
+    .register-form-w3layouts {
+        margin: 0 7vw;
+    }
+    h2.sub-heading-agileits,
+    h3.sub-heading-agileits {
+        text-align: center;
+        font-size: 23px;
+    }
+}
+
+@media(max-width:640px) {
+    h1 {
+        font-size: 7.5vw;
+    }
+    h2.sub-heading-agileits,
+    h3.sub-heading-agileits {
+        font-size: 21px;
+        letter-spacing: 1.5px;
+    }
+    .copyright p {
+        font-size: 15px;
+        letter-spacing: 1px;
+        line-height: 28px;
+    }
+    .register-form-w3layouts {
+        padding: 5vw;
+    }
+}
+
+@media(max-width:568px) {
+    .copyright {
+        margin: 1em 1em;
+    }
+    h2.sub-heading-agileits,
+    h3.sub-heading-agileits {
+        font-size: 20px;
+    }
+    .register-form-w3layouts input[type="text"],
+    .register-form-w3layouts input[type="email"],
+    .register-form-w3layouts textarea,
+    select.form-control,
+    input#datepicker {
+        font-size: 15px;
+    }
+    .register-form-w3layouts {
+        margin: 0px 5vw;
+        padding: 6vw;
+    }
+}
+
+@media(max-width:480px) {
+    h1 {
+        font-size: 9vw;
+        margin: 6vw 3vw 4vw;
+    }
+    h2.sub-heading-agileits,
+    h3.sub-heading-agileits {
+        font-size: 19px;
+    }
+    .register-form-w3layouts input[type="submit"],
+    .register-form-w3layouts input[type="reset"] {
+        width: 100%;
+        font-size: 1.05em;
+        margin-top: .8em;
+        float: none;
+    }
+}
+
+@media(max-width:414px) {
+    h1 {
+        font-size: 11vw;
+        letter-spacing: 3px;
+    }
+    .copyright {
+        margin: 1em 1.5em;
+    }
+}
+
+@media(max-width:320px) {
+    .register-form-w3layouts {
+        margin: 0px 3vw;
+    }
+    h2.sub-heading-agileits,
+    h3.sub-heading-agileits {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    h1 {
+        font-size: 12vw;
+        letter-spacing: 1px;
+    }
+}
+
+/*--//responsive--*/

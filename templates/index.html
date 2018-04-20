@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>IPL Prediction 2018</title>
+	<!-- Meta tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- //Meta tags -->
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="../static/css/jquery-ui.css" />
+	<link href="../static/css/style.css" rel='stylesheet' type='text/css' />
+	<!-- //Stylesheet -->
+	<!--fonts-->
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel="stylesheet">
+	<!--//fonts-->
+</head>
+
+<body>
+	<!--background-->
+	<h1>IPL Match Prediction </h1>
+	<div class="register-form-w3layouts">
+		<!-- Form starts here -->
+		<form action="" method=post>
+			<h3 class="sub-heading-agileits">Match Details</h3>
+			<!--<div class="main-flex-w3ls-sectns">
+				<div class="field-agileinfo-spc form-w3-agile-text1">
+					<input type="text" name="Name" placeholder="First Name" required="">
+				</div>
+				<div class="field-agileinfo-spc form-w3-agile-text2">
+					<input type="text" name="Name" placeholder="Last Name" required="">
+				</div>
+			</div>
+
+			<div class="main-flex-w3ls-sectns">
+				<div class="field-agileinfo-spc form-w3-agile-text1">
+					<input type="email" name="Email" placeholder="Email" required="">
+				</div>
+				<div class="field-agileinfo-spc form-w3-agile-text2">
+					<input type="text" name="Phone no" placeholder="Phone Number" required="">
+				</div>
+			</div>
+			-->
+			<div class="main-flex-w3ls-sectns">
+				<div class="field-agileinfo-spc form-w3-agile-text1">
+					<input id="datepicker" name="Text" type="text" placeholder="Date of the Match" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}"
+					    required="">
+				</div>
+				<div class="field-agileinfo-spc form-w3-agile-text2">
+					<select class="form-control" name="tossWinner" id="toss" onmousedown="whichTeamHasWonToss()">
+						<option selected disabled>Which Team Has Won The Toss</option>
+
+					</select>
+				</div>
+			</div>
+			<!--<div class="main-flex-w3ls-sectns">
+				<div class="field-agileinfo-spc form-w3-agile-text1">
+					<input type="text" name="Height" placeholder="Height (Inches)" required="">
+				</div>
+				<div class="field-agileinfo-spc form-w3-agile-text2">
+					<input type="text" name="Weight" placeholder="Weight (Pounds)" required="">
+				</div>
+			</div>
+			-->
+
+			<div class="main-flex-w3ls-sectns">
+				<div class="field-agileinfo-spc form-w3-agile-text1">
+					<select class="form-control" id="homeId" name="homeTeam" onchange="getStadium(this.value); checkSameTeam(this.value); ">
+						<option selected disabled>Home Team</option>
+						<option value="Mumbai">MI</option>
+						<option value="Kolkata">KKR</option>
+						<option value="Bangalore">RCB</option>
+						<option value="Pune">CSK</option>
+						<option value="Jaipur">RR</option>
+						<option value="Delhi">DD</option>
+						<option value="Dharamshala">KXIP</option>
+						<option value="Hyderabad">SRH</option>
+					</select>
+				</div>
+				<div class="field-agileinfo-spc form-w3-agile-text2">
+						<input type="text" name="city" id="city" readonly/>
+					</select>
+				</div>
+			</div>
+
+
+
+			<div class="main-flex-w3ls-sectns">
+				<div class="field-agileinfo-spc form-w3-agile-text1">
+					<select class="form-control" id="awayId" name="awayTeam" onchange="checkSameTeam(this.value); ">
+						<option  selected disabled hidden>Away Team</option>
+						<option value="Mumbai">MI</option>
+						<option value="Kolkata">KKR</option>
+						<option value="Bangalore">RCB</option>
+						<option value="Pune">CSK</option>
+						<option value="Jaipur">RR</option>
+						<option value="Delhi">DD</option>
+						<option value="Dharamshala">KXIP</option>
+						<option value="Hyderabad">SRH</option>
+					</select>
+				</div>
+			</div>
+
+
+
+		<!--
+			<div class="field-agileinfo-spc form-w3-agile-text">
+				<textarea name="Message" placeholder="Address..."></textarea>
+			</div>
+		-->
+			<!--<div class="clear"></div>-->
+			<div class="radio-section">
+				<h6>Toss Decision?</h6>
+				<ul class="radio-buttons-w3-agileits" name="tossDecision">
+					<li>
+						<input type="radio" id="a-option" name="selector1">
+						<label for="a-option">Bat</label>
+						<div class="check"></div>
+					</li>
+					<li>
+						<input type="radio" id="b-option" name="selector1">
+						<label for="b-option">Field</label>
+						<div class="check">
+							<div class="inside"></div>
+						</div>
+					</li>
+				</ul>
+				<!--<div class="clear"></div>-->
+			</div>
+
+			<input type="submit" value="Submit">
+			<input type="reset" id="reset" value="Clear Form">
+			<!--<div class="clear"></div>-->
+		</form>
+	</div>
+	<!--copyright-->
+	<div class="copyright">
+		<!--<p>&copy; 2018. OP Registration Form . All Rights Reserved | Design by
+			<a href="http://w3layouts.com/" target="_blank">W3layouts</a>
+		</p>-->
+	</div>
+	<!--//copyright-->
+	<script type="text/javascript" src="../static/js/jquery-2.2.3.min.js"></script>
+	<!-- Calendar Js -->
+	<script src="../static/js/jquery-ui.js"></script>
+	<script>
+		$(function () {
+			$("#datepicker,#datepicker1,#datepicker2,#datepicker3").datepicker();
+		});
+	</script>
+	<script type="text/javascript" src="../static/js/javaScriptFunction.js"></script>
+
+</body>
+
+</html>

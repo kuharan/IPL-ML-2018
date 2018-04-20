@@ -1,5 +1,5 @@
 # IPL-ML-2018
-This project tries to predict the winner of a very popular cricket tournament happening in India - IPL 2018. The objective is to predict the result(winner) of every IPL match. The project also predicts the ultimate winner of the tournament. It does not impose a specific development philosophy or framework, so you're free to architect your code in the way that you want.
+This project tries to predict the winner of a very popular cricket tournament happening in India - IPL 2018. The objective is to predict the result(winner) of every IPL match. The project also predicts the ultimate winner of the tournament. It does not impose a specific development philosophy or framework, so you're free to clone, modify and architect your code in the way that you want and add your contribution to this repository.
 
 ## Getting Started
 
@@ -7,8 +7,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-* PyCharm *
-* Any Web Browser *
+* PyCharm
+* Any Web Browser
 
 ## Browser support
 

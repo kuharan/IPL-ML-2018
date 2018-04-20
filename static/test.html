@@ -1,0 +1,34 @@
+<html>
+
+<body>
+<form id="example" name="example">
+        <select id="sensor" onchange="updateText('sensor')">
+        <option value="" selected disabled hidden>Choose here</option>
+              <option value="MI">MI</option>
+                        <option value="Mumbai">MI</option>
+
+						<option value="Kolkata">KKR</option>
+						<option value="Bangalore">RCB</option>
+						<option value="Pune">CSK</option>
+						<option value="Jaipur">RR</option>
+						<option value="Delhi">DD</option>
+						<option value="Dharamshala">KXIP</option>
+						<option value="Hyderabad">SRH</option>
+    </select>
+
+
+
+    <br />
+    <input type="text" value="" id="sensorText" /> <input type="text" value="" id="voltageText" />
+</form>
+
+<script type="text/javascript">
+
+function updateText(type) {
+ var id = type+'Text';
+ document.getElementById(id).value = document.getElementById(type).value;
+}
+</script>
+</body>
+
+</html>
