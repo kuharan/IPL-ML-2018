@@ -1,6 +1,5 @@
 import csv
 
-
 # Read the file Matches Data set.
 def read_csv() -> list:
     with open('./matches.csv', newline='') as rawFile:
