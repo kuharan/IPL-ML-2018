@@ -2,120 +2,103 @@ import pandas as pd
 from sklearn import model_selection
 from sklearn.tree import DecisionTreeClassifier
 
-def pred(homeTeam,awayTeam,city,tossWinner,tossDecision):
-    matches_cleaned_data=pd.read_csv('./Dataset/matches_cleaned.csv')
-    # print(matches_cleaned_data)
 
+def pred(home_team, away_team, city, toss_winner, toss_decision):
+    matches_cleaned_data = pd.read_csv('./Dataset/matches_cleaned.csv')
     matches_df = matches_cleaned_data[['team1', 'team2', 'city', 'toss_winner', 'toss_decision', 'winner']]
-    # print(matches_df)
 
     # Split-out validation dataset
     array = matches_df.values
-    X = array[:, 0:5]
-    Y = array[:, 5]
+    x = array[:, 0:5]
+    y = array[:, 5]
     validation_size = 0.10
-    # print(X)
-    # print(Y)
     seed = 7
-    X_train, X_validation, Y_train, Y_validation = model_selection.train_test_split(X, Y, test_size=validation_size, random_state=seed)
+    x_train, x_validation, y_train, y_validation = model_selection.train_test_split(x, y, test_size=validation_size, random_state=seed)
+
     # Test options and evaluation metric
-    seed = 7
-    scoring = 'accuracy'
-    models = [('CART', DecisionTreeClassifier())]
-
-    results = []
-    names = []
-
     knn = DecisionTreeClassifier()
-    knn.fit(X_train, Y_train)
-    results=converter(homeTeam,awayTeam,city,tossWinner,tossDecision)
-    # l=[]
-    # l.append(results)
+    knn.fit(x_train, y_train)
+    results = converter(home_team, away_team, city, toss_winner, toss_decision)
     predictions = knn.predict([results])
     print(predictions)
     return predictions
-def converter(homeTeam,awayTeam,city,tossWinner,tossDecision):
-    list=[]
-    if(homeTeam=="Kolkata"):
+
+
+def converter(home_team, away_team, city, toss_winner, toss_decision):
+    list = []
+    if home_team == 'Kolkata':
         list.append(6)
-    if (homeTeam == "Bangalore"):
+    if home_team == "Bangalore":
         list.append(5)
-    if (homeTeam == "Pune"):
+    if home_team == "Pune":
         list.append(9)
-    if (homeTeam == "Jaipur"):
+    if home_team == "Jaipur":
         list.append(10)
-    if (homeTeam == "Delhi"):
+    if home_team == "Delhi":
         list.append(7)
-    if (homeTeam == "Dharamshala"):
+    if home_team == "Dharamshala":
         list.append(8)
-    if (homeTeam == "Hyderabad"):
+    if home_team == "Hyderabad":
         list.append(1)
-    if (homeTeam == "Mumbai"):
-        list.append(2)
-    if (awayTeam == "Kolkata"):
-        list.append(6)
-    if (awayTeam == "Bangalore"):
-        list.append(5)
-    if (awayTeam == "Pune"):
-        list.append(9)
-    if (awayTeam == "Jaipur"):
-        list.append(10)
-    if (awayTeam == "Delhi"):
-        list.append(7)
-    if (awayTeam == "Dharamshala"):
-        list.append(8)
-    if (awayTeam == "Hyderabad"):
-        list.append(1)
-    if (awayTeam == "Mumbai"):
+    if home_team == "Mumbai":
         list.append(2)
 
-    if (city[6:] == "Kolkata"):
-        list.append(7)
-    if (city[6:] == "Bangalore"):
+    if away_team == "Kolkata":
+        list.append(6)
+    if away_team == "Bangalore":
         list.append(5)
-    if (city[6:] == "Pune"):
+    if away_team == "Pune":
+        list.append(9)
+    if away_team == "Jaipur":
+        list.append(10)
+    if away_team == "Delhi":
+        list.append(7)
+    if away_team == "Dharamshala":
+        list.append(8)
+    if away_team == "Hyderabad":
+        list.append(1)
+    if away_team == "Mumbai":
         list.append(2)
-    if (city[6:] == "Jaipur"):
+
+    if city[6:] == "Kolkata":
+        list.append(7)
+    if city[6:] == "Bangalore":
+        list.append(5)
+    if city[6:] == "Pune":
+        list.append(2)
+    if city[6:] == "Jaipur":
         list.append(11)
-    if (city[6:] == "Delhi"):
+    if city[6:] == "Delhi":
         list.append(8)
-    if (city[6:] == "Dharamshala"):
+    if city[6:] == "Dharamshala":
         list.append(24)
-    if (city[6:] == "Hyderabad"):
+    if city[6:] == "Hyderabad":
         list.append(1)
-    if (city[6:] == "Mumbai"):
+    if city[6:] == "Mumbai":
         list.append(6)
 
-
-
-    if (tossWinner == "KKR"):
+    if toss_winner == "KKR":
         list.append(6)
-    if (tossWinner == "RCB"):
+    if toss_winner == "RCB":
         list.append(5)
-    if (tossWinner == "CSK"):
+    if toss_winner == "CSK":
         list.append(9)
-    if (tossWinner == "RR"):
+    if toss_winner == "RR":
         list.append(10)
-    if (tossWinner == "DD"):
+    if toss_winner == "DD":
         list.append(7)
-    if (tossWinner == "KXIP"):
+    if toss_winner == "KXIP":
         list.append(8)
-    if (tossWinner == "SRH"):
+    if toss_winner == "SRH":
         list.append(1)
-    if (tossWinner == "MI"):
+    if toss_winner == "MI":
         list.append(2)
 
-    if (tossDecision == "Bat"):
+    if toss_decision == "Bat":
         list.append(2)
-    if (tossDecision == "Field"):
+    if toss_decision == "Field":
         list.append(1)
     print(list)
     return list
 
 # Kolkata Mumbai City: Kolkata KKR Bat
-
-
-
-
-
-

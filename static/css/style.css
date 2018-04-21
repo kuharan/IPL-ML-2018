@@ -1,12 +1,3 @@
-/*
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
-*/
-
-/*--reset--*/
-
 html,
 body,
 div,
@@ -90,8 +81,11 @@ video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
-    font: inherit;
+    font-weight: inherit;
+    font-variant: inherit;
+    font-style: inherit;
+    font-size: inherit;
+    font-family: inherit;
     vertical-align: baseline;
 }
 
@@ -221,13 +215,12 @@ img {
 body {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 100%;
-    background: url(../images/banner.jpg)no-repeat center top;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     /* background-attachment: fixed; */
-    background-position: center;
+    background: url(../images/banner.jpg) no-repeat center;
 }
 
 .register-form-w3layouts {
@@ -261,7 +254,7 @@ h3.sub-heading-agileits {
     padding: 7px;
     font-weight: 300;
     letter-spacing: 2px;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.06);
     border-radius: 50px;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.86);
     font-family: 'Source Sans Pro', sans-serif;
