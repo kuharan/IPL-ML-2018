@@ -1,5 +1,5 @@
 import csv
-
+import json
 # Read the file Matches Data set.
 def read_csv() -> list:
     with open('./Dataset/matches.csv', newline='') as rawFile:
@@ -67,6 +67,8 @@ if "__main__" == __name__:
     for i in range(len(team_list)):
         team_dict[team_list[i]] = var1[i]
     print(team_dict)
+    with open('./jsonDumps/team_dict.json', 'w') as outfile:
+        json.dump(team_dict, outfile)
 
     # create a dict for toss decision
 
@@ -74,6 +76,8 @@ if "__main__" == __name__:
     for i in range(len(toss_decision_list)):
         toss_decision_dict[toss_decision_list[i]] = var2[i]
     print(toss_decision_dict)
+    with open('./jsonDumps/toss_decision_dict.json', 'w') as outfile:
+        json.dump(toss_decision_dict, outfile)
 
     # create a dict for city
 
@@ -81,6 +85,8 @@ if "__main__" == __name__:
     for i in range(len(city_list)):
         city_dict[city_list[i]] = var3[i]
     print(city_dict)
+    with open('./jsonDumps/city_dict.json', 'w') as outfile:
+        json.dump(city_dict, outfile)
 
     # Replace the matches list with values from these dictionaries
     replace_matched_items(matches_list, team_dict)

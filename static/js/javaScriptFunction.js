@@ -22,8 +22,7 @@ if(homeId==awayId){
 function whichTeamHasWonToss(type) {
 var homeTeam=document.getElementById("homeId").value;
 var awayTeam=document.getElementById("awayId").value;
-<!--document.getElementById("toss").appendChild(homeTeam);-->
-<!--document.getElementById("toss").appendChild(awayTeam);-->
+
 for(i=document.getElementById("toss").length;i>0;i--)
 {
 document.getElementById("toss").remove(i);
@@ -72,8 +71,11 @@ if(awayTeam==="Hyderabad"){
 t2="SRH";
 }
 }
+if(t1!=""){
+$(document.getElementById("toss")).append("<option value="+t1+">" +t1+ "</option>")
 
-$(document.getElementById("toss")).append("<option value="+"homeTeam"+">" +t1+ "</option>")
-$(document.getElementById("toss")).append("<option value="+"awayTeam"+">" +t2+ "</option>")
+}
+if(t2!=""){$(document.getElementById("toss")).append("<option value="+t2+">" +t2+ "</option>")
+}
 
 }
