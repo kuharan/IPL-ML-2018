@@ -141,6 +141,24 @@
 			<input type="reset" id="reset" value="Clear Form">
 			<!--<div class="clear"></div>-->
 		</form>
+		{% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+
+            {% for message in messages %}
+                {% if "Error" not in message[1]: %}
+                    <div class="alert alert-info" role="alert" align="center">
+                    <strong>Result : </strong> {{ message[1] }}
+                    </div>
+                {% endif %}
+
+                {% if "Error" in message[1]: %}
+                    <div class="alert alert-warning">
+                    {{ message[1] }}
+                    </div>
+                {% endif %}
+            {% endfor %}
+                {% endif %}
+            {% endwith %}
 	</div>
 	<!--copyright-->
 	<div class="copyright">
