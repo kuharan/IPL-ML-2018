@@ -1,9 +1,7 @@
 from Prediction import pred
-from flask import Flask, render_template, request,flash
-
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '7d441f27d441f27567d441f2b6176a'
 
 
 @app.route('/', methods=['POST', 'GET'])
@@ -15,8 +13,9 @@ def second():
         toss_winner = request.form['tossWinner']
         toss_decision = request.form['selector1']
         print(home_team, away_team, city, toss_winner, toss_decision)
-        winner_team=pred(home_team, away_team, city, toss_winner, toss_decision)
-        flash("winning team=="+winner_team)
+        winner_team = pred(home_team, away_team, city, toss_winner, toss_decision)
+        print("Winning Team is -> " + winner_team)
+
     return render_template('index.html')
 
 

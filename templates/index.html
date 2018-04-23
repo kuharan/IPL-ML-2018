@@ -30,6 +30,7 @@
 	<h1>IPL Match Prediction </h1>
 	<div class="register-form-w3layouts">
 		<!-- Form starts here -->
+        <div class="clear">
 		<form action="" method=post onsubmit="">
 			<h3 class="sub-heading-agileits">Match Details</h3>
 			<!--<div class="main-flex-w3ls-sectns">
@@ -62,16 +63,6 @@
 					</select>
 				</div>
 			</div>
-			<!--<div class="main-flex-w3ls-sectns">
-				<div class="field-agileinfo-spc form-w3-agile-text1">
-					<input type="text" name="Height" placeholder="Height (Inches)" required="">
-				</div>
-				<div class="field-agileinfo-spc form-w3-agile-text2">
-					<input type="text" name="Weight" placeholder="Weight (Pounds)" required="">
-				</div>
-			</div>
-			-->
-
 			<div class="main-flex-w3ls-sectns">
 				<div class="field-agileinfo-spc form-w3-agile-text1">
 					<select class="form-control" id="homeId" name="homeTeam" onchange="getStadium(this.value); checkSameTeam(this.value); ">
@@ -91,9 +82,6 @@
 					</select>
 				</div>
 			</div>
-
-
-
 			<div class="main-flex-w3ls-sectns">
 				<div class="field-agileinfo-spc form-w3-agile-text1">
 					<select class="form-control" id="awayId" name="awayTeam" onchange="checkSameTeam(this.value); ">
@@ -109,15 +97,6 @@
 					</select>
 				</div>
 			</div>
-
-
-
-		<!--
-			<div class="field-agileinfo-spc form-w3-agile-text">
-				<textarea name="Message" placeholder="Address..."></textarea>
-			</div>
-		-->
-			<!--<div class="clear"></div>-->
 			<div class="radio-section">
 				<h6>Toss Decision?</h6>
 				<ul class="radio-buttons-w3-agileits" name="tossDecision">
@@ -134,37 +113,15 @@
 						</div>
 					</li>
 				</ul>
-				<!--<div class="clear"></div>-->
 			</div>
-
 			<input type="submit" value="Submit">
 			<input type="reset" id="reset" value="Clear Form">
-			<!--<div class="clear"></div>-->
 		</form>
-		{% with messages = get_flashed_messages(with_categories=true) %}
-                {% if messages %}
-
-            {% for message in messages %}
-                {% if "Error" not in message[1]: %}
-                    <div class="alert alert-info" role="alert" align="center">
-                    <strong>Result : </strong> {{ message[1] }}
-                    </div>
-                {% endif %}
-
-                {% if "Error" in message[1]: %}
-                    <div class="alert alert-warning">
-                    {{ message[1] }}
-                    </div>
-                {% endif %}
-            {% endfor %}
-                {% endif %}
-            {% endwith %}
+        </div>
 	</div>
 	<!--copyright-->
 	<div class="copyright">
-		<!--<p>&copy; 2018. OP Registration Form . All Rights Reserved | Design by
-			<a href="http://w3layouts.com/" target="_blank">W3layouts</a>
-		</p>-->
+		<!--<p>&copy; 2018. IPL Predictions . All Rights Reserved |  	</p>-->
 	</div>
 	<!--//copyright-->
 	<script type="text/javascript" src="../static/js/jquery-2.2.3.min.js"></script>
