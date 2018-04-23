@@ -1,6 +1,7 @@
 import pandas as pd
 from sklearn import model_selection
 from sklearn.tree import DecisionTreeClassifier
+import csv
 
 
 def pred(home_team, away_team, city, toss_winner, toss_decision):
@@ -13,7 +14,8 @@ def pred(home_team, away_team, city, toss_winner, toss_decision):
     y = array[:, 5]
     validation_size = 0.10
     seed = 7
-    x_train, x_validation, y_train, y_validation = model_selection.train_test_split(x, y, test_size=validation_size, random_state=seed)
+    x_train, x_validation, y_train, y_validation = model_selection.train_test_split(x, y, test_size=validation_size,
+                                                                                    random_state=seed)
 
     # Test options and evaluation metric
     knn = DecisionTreeClassifier()
@@ -38,6 +40,7 @@ def pred(home_team, away_team, city, toss_winner, toss_decision):
     if predictions[0] == "2":
         team = 'MI'
     print(team)
+
     return team
 
 
@@ -119,4 +122,15 @@ def converter(home_team, away_team, city, toss_winner, toss_decision):
 
     return list
 
+
 # Kolkata Mumbai City: Kolkata KKR Bat
+
+# prediction from site scrape data
+with open('./Dataset/_player_rank.csv', newline='') as rawFile:
+    reader = csv.reader(rawFile)
+    for row in reader:
+        print(row)
+
+    #     x = list(reader)
+    # for col in reader:
+    #     print(col[0], col[1], col[2], col[3], col[4], col[5], col[6], col[7])
