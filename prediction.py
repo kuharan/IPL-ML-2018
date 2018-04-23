@@ -123,14 +123,18 @@ def converter(home_team, away_team, city, toss_winner, toss_decision):
     return list
 
 
-# Kolkata Mumbai City: Kolkata KKR Bat
+# OUTPUT # Kolkata Mumbai City: Kolkata KKR Bat
 
 # prediction from site scrape data
-with open('./Dataset/_player_rank.csv', newline='') as rawFile:
-    reader = csv.reader(rawFile)
-    for row in reader:
-        print(row)
+def calculate_EFscore(team_name):
+    with open('./Dataset/_player_rank.csv', newline='') as rawFile:
+        reader = csv.reader(rawFile)
+        sum_EFscore = 0;
+        for row in reader:
+            print(row)
+            for i in range(10):
+                sum_EFscore = sum_EFscore + reader['EFscore'][i];
+    print(sum_EFscore)
 
-    #     x = list(reader)
-    # for col in reader:
-    #     print(col[0], col[1], col[2], col[3], col[4], col[5], col[6], col[7])
+
+calculate_EFscore('Royal Challengers Bangalore')
