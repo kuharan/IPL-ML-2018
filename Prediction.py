@@ -20,8 +20,25 @@ def pred(home_team, away_team, city, toss_winner, toss_decision):
     knn.fit(x_train, y_train)
     results = converter(home_team, away_team, city, toss_winner, toss_decision)
     predictions = knn.predict([results])
-    print(predictions)
-    return predictions
+    team = ''
+    if predictions[0] == '6':
+        team = 'KKR'
+    if predictions[0] == "5":
+        team = 'RCB'
+    if predictions[0] == "9":
+        team = 'CSK'
+    if predictions[0] == "10":
+        team = 'RR'
+    if predictions[0] == "7":
+        team = 'DD'
+    if predictions[0] == "8":
+        team = 'KXIP'
+    if predictions[0] == "1":
+        team = 'SRH'
+    if predictions[0] == "2":
+        team = 'MI'
+    print(team)
+    return team
 
 
 def converter(home_team, away_team, city, toss_winner, toss_decision):
@@ -99,6 +116,7 @@ def converter(home_team, away_team, city, toss_winner, toss_decision):
     if toss_decision == "Field":
         list.append(1)
     print(list)
+
     return list
 
 # Kolkata Mumbai City: Kolkata KKR Bat

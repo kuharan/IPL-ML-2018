@@ -1,0 +1,3 @@
+myFunction(){
+console.log("test")
+}

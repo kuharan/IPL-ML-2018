@@ -45,10 +45,9 @@ if (homeTeam==="Mumbai") {
 } else if (homeTeam==="Dharamshala") {
     t1="KXIP";
 }
-else {
-if(awayTeam==="Hyderabad"){
+else if(homeTeam==="Hyderabad"){
 t1="SRH";
-}
+
 }
 
 if (awayTeam==="Mumbai") {
@@ -66,11 +65,10 @@ if (awayTeam==="Mumbai") {
 } else if (awayTeam==="Dharamshala") {
     t2="KXIP";
 }
-else {
-if(awayTeam==="Hyderabad"){
+else if(awayTeam==="Hyderabad"){
 t2="SRH";
 }
-}
+
 if(t1!=""){
 $(document.getElementById("toss")).append("<option value="+t1+">" +t1+ "</option>")
 
