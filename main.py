@@ -5,7 +5,12 @@ app = Flask(__name__)
 
 
 @app.route('/', methods=['POST', 'GET'])
-def second():
+def get_data():
+    return render_template('index.html')
+
+
+@app.route('/submit', methods=['POST', 'GET'])
+def post():
     if request.method == 'POST':
         home_team = request.form['homeTeam']
         away_team = request.form['awayTeam']
@@ -15,8 +20,8 @@ def second():
         print(home_team, away_team, city, toss_winner, toss_decision)
         winner_team = pred(home_team, away_team, city, toss_winner, toss_decision)
         print("Winning Team is -> " + winner_team)
+    return render_template('results.html')
 
-    return render_template('index.html')
 
 
 # Kolkata Mumbai City: Kolkata KKR Bat

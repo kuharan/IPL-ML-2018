@@ -6478,7 +6478,7 @@ $.widget( "ui.autocomplete", {
 				if ( this.element[0] !== this.document[0].activeElement ) {
 					this.element.focus();
 					this.previous = previous;
-					// #6109 - IE triggers two focus events and the second
+					// #6109 - IE triggers two focus events and the get_data
 					// is asynchronous, so we need to reset the previous
 					// term synchronously and asynchronously :-(
 					this._delay(function() {
@@ -11707,7 +11707,7 @@ $.fn.position = function( options ) {
 		}
 
 		if ( options.using ) {
-			// adds feedback as second argument to using callback, if present
+			// adds feedback as get_data argument to using callback, if present
 			using = function( props ) {
 				var left = targetOffset.left - position.left,
 					right = left + targetWidth - elemWidth,

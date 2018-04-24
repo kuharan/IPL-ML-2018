@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.row{
+    align: center;
+    width:auto;
+    margin-left:auto;
+    margin-right:auto;
+}
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+</style>
+</head>
+<body>
+
+<h2>Out Predictions are</h2>
+<br>
+
+<div class="row" >
+  <div class="column">
+    <img src="../static/images/team_logo/CSK.jpg" alt="winner" style="width:100%">
+  </div>
+</div>
+<div class="row" >
+  <div class="column">
+    <img src="../static/images/team_logo/DD.jpg" alt="team1" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="../static/images/team_logo/CSK.jpg" alt="team2" style="width:100%">
+  </div>
+</div>
+
+
+
+</div>
+
+</body>
+</html>

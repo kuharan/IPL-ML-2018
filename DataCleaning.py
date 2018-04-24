@@ -75,7 +75,7 @@ if "__main__" == __name__:
     toss_decision_dict = {}
     for i in range(len(toss_decision_list)):
         toss_decision_dict[toss_decision_list[i]] = var2[i]
-    print(toss_decision_dict)
+    # print(toss_decision_dict)
     with open('./jsonDumps/toss_decision_dict.json', 'w') as outfile:
         json.dump(toss_decision_dict, outfile)
 
@@ -84,7 +84,7 @@ if "__main__" == __name__:
     city_dict = {}
     for i in range(len(city_list)):
         city_dict[city_list[i]] = var3[i]
-    print(city_dict)
+    # print(city_dict)
     with open('./jsonDumps/city_dict.json', 'w') as outfile:
         json.dump(city_dict, outfile)
 
