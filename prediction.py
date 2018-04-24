@@ -39,7 +39,9 @@ def pred(home_team, away_team, city, toss_winner, toss_decision):
         team = 'SRH'
     if predictions[0] == "2":
         team = 'MI'
-    print(team)
+
+    winner = calculate_ef_score(home_team, away_team)
+    print("EF score data ->"+winner)
 
     return team
 
@@ -118,8 +120,6 @@ def converter(home_team, away_team, city, toss_winner, toss_decision):
         list.append(2)
     if toss_decision == "Field":
         list.append(1)
-    print(list)
-
     return list
 
 
@@ -131,10 +131,7 @@ def calculate_ef_score(home, away):
     home_score = list(data.loc[data['Team'] == home]['sum'])
     away_score = list(data.loc[data['Team'] == away]['sum'])
     if home_score > away_score:
-        return home_score
+        return home
     else:
-        return away_score
+        return away
 
-
-data = calculate_ef_score('Royal Challengers Bangalore', 'Mumbai Indians')
-print(data)
