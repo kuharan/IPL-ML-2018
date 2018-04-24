@@ -128,10 +128,13 @@ def converter(home_team, away_team, city, toss_winner, toss_decision):
 # prediction from site scrape data
 def calculate_ef_score(home, away):
     data = pd.read_csv('./Dataset/_team_rank.csv')
-    home_score = data.loc[data['Team'] == home]['sum']
-    away_score = data.loc[data['Team'] == away]['sum']
+    home_score = list(data.loc[data['Team'] == home]['sum'])
+    away_score = list(data.loc[data['Team'] == away]['sum'])
+    if home_score > away_score:
+        return home_score
+    else:
+        return away_score
 
-    print(home_score, '\n', away_score)
 
-
-calculate_ef_score('Royal Challengers Bangalore', 'Mumbai Indians')
+data = calculate_ef_score('Royal Challengers Bangalore', 'Mumbai Indians')
+print(data)
