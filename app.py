@@ -35,7 +35,7 @@ def convert_backto_teamnames(team):
     if team == "Bangalore":
         team_name = "RCB"
     if team == "Pune":
-        team_name = "PUNE"
+        team_name = "CSK"
     if team == "Jaipur":
         team_name = "RR"
     if team == "Delhi":
