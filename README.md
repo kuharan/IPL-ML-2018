@@ -2,7 +2,7 @@
 This project tries to predict the winner of a very popular cricket tournament happening in India - IPL 2018. The objective is to predict the result(winner) of every IPL match. The project also predicts the ultimate winner of the tournament. It does not impose a specific development philosophy or framework, so you're free to clone, modify and architect your code in the way that you want and add your contribution to this repository.
 
 ## Deploy to Heroku
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/kuharan/IPL-ML-2018)
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 ## Getting Started
 
