@@ -4,4 +4,9 @@
   "repository": "https://github.com/kuharan/IPL-ML-2018",
   "logo": "https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/03/12/Pictures/_551c3a3a-260a-11e8-a8dd-98cd3615fcfa.jpg",
   "keywords": ["ipl", "prediction", "2018"]
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-python"
+    }
+  ]
 }
