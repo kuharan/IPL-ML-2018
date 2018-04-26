@@ -1,8 +1,9 @@
-from prediction import pred
+from prediction import predict
 from flask import Flask, render_template, request, flash
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '7d44'
+
 
 @app.route('/', methods=['POST', 'GET'])
 def get_data():
@@ -18,20 +19,20 @@ def post():
         toss_winner = request.form['tossWinner']
         toss_decision = request.form['selector1']
         print(home_team, away_team, city, toss_winner, toss_decision)
-        winner_team = pred(home_team, away_team, city, toss_winner, toss_decision)
+        winner_team = predict(home_team, away_team, city, toss_winner, toss_decision)
         print("Winning Team is -> " + winner_team)
-        home_team_name = convert_backto_teamnames(home_team)
-        away_team_name = convert_backto_teamnames(away_team)
-        flash("Match Prediction between "+home_team_name+" and "+away_team_name+" is higher for: "+winner_team)
+        home_team_name = convert_back_to_team_names(home_team)
+        away_team_name = convert_back_to_team_names(away_team)
+        flash("Match Prediction between " + home_team_name + " and " + away_team_name + " is higher for: " + winner_team)
     return render_template('index.html')
     # return render_template('results.html')
 
 
-def convert_backto_teamnames(team):
-    team_name=""
+def convert_back_to_team_names(team):
+    team_name = ""
 
     if team == 'Kolkata':
-        team_name="KKR"
+        team_name = "KKR"
     if team == "Bangalore":
         team_name = "RCB"
     if team == "Pune":
@@ -48,6 +49,7 @@ def convert_backto_teamnames(team):
         team_name = "MI"
 
     return team_name
+
 
 if __name__ == '__main__':
     app.run()

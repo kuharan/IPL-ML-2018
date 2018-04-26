@@ -1,10 +1,9 @@
 import pandas as pd
 from sklearn import model_selection
 from sklearn.tree import DecisionTreeClassifier
-import csv
 
 
-def pred(home_team, away_team, city, toss_winner, toss_decision):
+def predict(home_team, away_team, city, toss_winner, toss_decision):
     matches_cleaned_data = pd.read_csv('./Dataset/matches_cleaned.csv')
     matches_df = matches_cleaned_data[['team1', 'team2', 'city', 'toss_winner', 'toss_decision', 'winner']]
 
@@ -20,8 +19,9 @@ def pred(home_team, away_team, city, toss_winner, toss_decision):
     # Test options and evaluation metric
     knn = DecisionTreeClassifier()
     knn.fit(x_train, y_train)
-    results = converter(home_team, away_team, city, toss_winner, toss_decision)
+    results = convert_to_numerical_field(home_team, away_team, city, toss_winner, toss_decision)
     predictions = knn.predict([results])
+
     team = ''
     if predictions[0] == '6':
         team = 'KKR'
@@ -40,13 +40,37 @@ def pred(home_team, away_team, city, toss_winner, toss_decision):
     if predictions[0] == "2":
         team = 'MI'
 
-    winner = calculate_ef_score(home_team, away_team)
-    print("EF score data ->"+winner)
+    print("model->" + team)
+    if predictions != convert_again(home_team):
+        if predictions != convert_again(away_team):
+            print("Exception Case")
+            winner = calculate_ef_score(home_team, away_team)
+            print("EF score data ->" + winner)
+            return winner
+    else:
+        return team
 
-    return team
+
+def convert_again(home_team):
+    if home_team == 'Kolkata':
+        return 6
+    if home_team == "Bangalore":
+        return 5
+    if home_team == "Pune":
+        return 9
+    if home_team == "Jaipur":
+        return 10
+    if home_team == "Delhi":
+        return 7
+    if home_team == "Dharamshala":
+        return 8
+    if home_team == "Hyderabad":
+        return 1
+    if home_team == "Mumbai":
+        return 2
 
 
-def converter(home_team, away_team, city, toss_winner, toss_decision):
+def convert_to_numerical_field(home_team, away_team=0, city=0, toss_winner=0, toss_decision=0):
     list = []
     if home_team == 'Kolkata':
         list.append(6)
@@ -123,8 +147,6 @@ def converter(home_team, away_team, city, toss_winner, toss_decision):
     return list
 
 
-# OUTPUT # Kolkata Mumbai City: Kolkata KKR Bat
-
 # prediction from site scrape data
 def calculate_ef_score(home, away):
     data = pd.read_csv('./Dataset/_team_rank.csv')
@@ -135,3 +157,4 @@ def calculate_ef_score(home, away):
     else:
         return away
 
+# predict('Jaipur', 'Hyderabad', 'City: Jaipur', 'RR', 'Bat')
