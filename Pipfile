@@ -4,3 +4,7 @@ python_version = "3.6"
 [packages]
 pandas = "*"
 Flask = "*"
+sklearn ="*"
+beautifulsoup4 = "*"
+bs4 = "*"
+requests = "*"
