@@ -1,4 +1,5 @@
-[packages]
+[dev-packages]
+pipenv = {path = ".", editable = true}
 beautifulsoup4==4.6.0
 bs4==0.0.1
 certifi==2018.4.16
