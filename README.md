@@ -45,12 +45,9 @@ Run the DataCleaning.py
 ```
 {'Hyderabad': 1, 'Pune': 2, 'Rajkot': 3, 'Indore': 4, 'Bangalore': 5, 'Mumbai': 6, 'Kolkata': 7, 'Delhi': 8, 'Chandigarh': 9, 'Kanpur': 10, 'Jaipur': 11, 'Chennai': 12, 'Cape Town': 13, 'Port Elizabeth': 14, 'Durban': 15, 'Centurion': 16, 'East London': 17, 'Johannesburg': 18, 'Kimberley': 19, 'Bloemfontein': 20, 'Ahmedabad': 21, 'Cuttack': 22, 'Nagpur': 23, 'Dharamshala': 24, 'Kochi': 25, 'Visakhapatnam': 26, 'Raipur': 27, 'Ranchi': 28, 'Abu Dhabi': 29, 'Sharjah': 30, 'Dubai': 31}
 ```
-
-Run the Prediction.py
-
-```
-
-```
+#Live Demo
+* [Link1](https://ipl2018prediction.herokuapp.com/)
+* [Link2](https://iplprediction2018.herokuapp.com/)
 
 ## Built With
 
