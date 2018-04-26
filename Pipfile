@@ -1,5 +1,11 @@
-[dev-packages]
-pipenv = {path = ".", editable = true}
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+
 beautifulsoup4==4.6.0
 bs4==0.0.1
 certifi==2018.4.16
@@ -52,4 +58,5 @@ zope.deprecation==4.3.0
 zope.interface==4.4.3
 
 [requires]
+
 python_version = "3.6"
