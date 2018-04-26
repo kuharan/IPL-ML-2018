@@ -41,9 +41,10 @@ def predict(home_team, away_team, city, toss_winner, toss_decision):
         team = 'MI'
 
     print("model->" + team)
-    if predictions != convert_again(home_team):
-        if predictions != convert_again(away_team):
-            print("Exception Case")
+    if int(predictions) != convert_again(home_team).__int__():
+        if int(predictions) != convert_again(away_team).__int__():
+            print("Exception Case" + convert_again(home_team).__str__() + "" + convert_again(
+                home_team).__str__() + "" + predictions)
             winner = calculate_ef_score(home_team, away_team)
             print("EF score data ->" + winner)
             return winner
@@ -157,4 +158,5 @@ def calculate_ef_score(home, away):
     else:
         return away
 
-# predict('Jaipur', 'Hyderabad', 'City: Jaipur', 'RR', 'Bat')
+
+#predict('Jaipur', 'Hyderabad', 'City: Jaipur', 'RR', 'Bat')
