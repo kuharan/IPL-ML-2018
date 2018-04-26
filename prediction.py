@@ -45,11 +45,30 @@ def predict(home_team, away_team, city, toss_winner, toss_decision):
         if int(predictions) != convert_again(away_team).__int__():
             print("Exception Case" + convert_again(home_team).__str__() + "" + convert_again(
                 home_team).__str__() + "" + predictions)
-            winner = calculate_ef_score(home_team, away_team)
+            winner = convert_to_shortform(calculate_ef_score(home_team, away_team))
             print("EF score data ->" + winner)
             return winner
     else:
         return team
+
+
+def convert_to_shortform(winning_team):
+    if winning_team == 'Kolkata':
+        return 'KKR'
+    if winning_team == "Bangalore":
+        return 'RCB'
+    if winning_team == "Pune":
+        return 'CSK'
+    if winning_team == "Jaipur":
+        return 'RR'
+    if winning_team == "Delhi":
+        return 'DD'
+    if winning_team == "Dharamshala":
+        return 'KXIP'
+    if winning_team == "Hyderabad":
+        return 'SRH'
+    if winning_team == "Mumbai":
+        return 'MI'
 
 
 def convert_again(home_team):
@@ -158,5 +177,4 @@ def calculate_ef_score(home, away):
     else:
         return away
 
-
-#predict('Jaipur', 'Hyderabad', 'City: Jaipur', 'RR', 'Bat')
+# predict('Jaipur', 'Hyderabad', 'City: Jaipur', 'RR', 'Bat')
