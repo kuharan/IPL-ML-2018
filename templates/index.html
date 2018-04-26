@@ -31,6 +31,20 @@
 	<div class="register-form-w3layouts">
 		<!-- Form starts here -->
         <div class="clear">
+		{% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+				{% for message in messages %}
+					{% if "Error" not in message[1]: %}
+						<div class="flash-msg" role="alert" align="center" style="font-size: xx-large;color:  lawngreen;font-style: normal;font-family: unset;font-weight: initial;align-items:  stretch;">
+						<strong>Result : </strong> {{ message[1] }}
+						</div>
+					{% endif %}
+					{% if "Error" in message[1]: %}
+						<div class="alert alert-warning">{{ message[1] }}</div>
+					{% endif %}
+				{% endfor %}
+        	{% endif %}
+		{% endwith %}
 		<form action="/submit" method=post onsubmit="">
 			<h3 class="sub-heading-agileits">Match Details</h3>
 			<!--<div class="main-flex-w3ls-sectns">
