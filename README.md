@@ -28,31 +28,14 @@ These instructions will get you a copy of the project up and running on your loc
 Pandas, sklearn, sklearn.tree, model_selection, DecisionTreeClassifier, csv
 ```
 
-### Installing
-
-Clone the repository and open the project in PyCharm.
-
-Run the DataCleaning.py
-
-```
-{'Sunrisers Hyderabad': 1, 'Mumbai Indians': 2, 'Gujarat Lions': 3, 'Rising Pune Supergiant': 4, 'Royal Challengers Bangalore': 5, 'Kolkata Knight Riders': 6, 'Delhi Daredevils': 7, 'Kings XI Punjab': 8, 'Chennai Super Kings': 9, 'Rajasthan Royals': 10, 'Deccan Chargers': 11, 'Kochi Tuskers Kerala': 12, 'Pune Warriors': 13, 'Rising Pune Supergiants': 14}
-```
-
-```
-{'field': 1, 'bat': 2}
-```
-
-```
-{'Hyderabad': 1, 'Pune': 2, 'Rajkot': 3, 'Indore': 4, 'Bangalore': 5, 'Mumbai': 6, 'Kolkata': 7, 'Delhi': 8, 'Chandigarh': 9, 'Kanpur': 10, 'Jaipur': 11, 'Chennai': 12, 'Cape Town': 13, 'Port Elizabeth': 14, 'Durban': 15, 'Centurion': 16, 'East London': 17, 'Johannesburg': 18, 'Kimberley': 19, 'Bloemfontein': 20, 'Ahmedabad': 21, 'Cuttack': 22, 'Nagpur': 23, 'Dharamshala': 24, 'Kochi': 25, 'Visakhapatnam': 26, 'Raipur': 27, 'Ranchi': 28, 'Abu Dhabi': 29, 'Sharjah': 30, 'Dubai': 31}
-```
 ## We are Live on Heroku!
 * [Link1](https://ipl2018prediction.herokuapp.com/)
 * [Link2](https://iplprediction2018.herokuapp.com/)
 
 ## Built With
 
-* [PyCharm](https://www.jetbrains.com/pycharm/) - IDE used for Machine Learning Model
-* [WebStorm](https://www.jetbrains.com/webstorm/) - IDE used for the application UI
+* [PyCharm](https://www.jetbrains.com/pycharm/) - IDE used for Machine Learning Model and Scraping Websites
+* [WebStorm](https://www.jetbrains.com/webstorm/) - IDE used for the Web Application UI
 
 
 ## Contributing
