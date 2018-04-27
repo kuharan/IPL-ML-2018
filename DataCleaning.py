@@ -1,5 +1,7 @@
 import csv
 import json
+
+
 # Read the file Matches Data set.
 def read_csv() -> list:
     with open('./Dataset/matches.csv', newline='') as rawFile:

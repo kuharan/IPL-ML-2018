@@ -19,10 +19,10 @@ def post():
         toss_winner = request.form['tossWinner']
         toss_decision = request.form['selector1']
         print(home_team, away_team, city, toss_winner, toss_decision)
-        winner_team = predict(home_team, away_team, city, toss_winner, toss_decision)
-        print("Winning Team is -> " + winner_team.__str__())
-        home_team_name = convert_back_to_team_names(home_team)
-        away_team_name = convert_back_to_team_names(away_team)
+        winner_team = predict(home_team, away_team, city, toss_winner, toss_decision).__str__()
+        print("Winning Team is -> " + winner_team)
+        home_team_name = convert_back_to_team_names(home_team).__str__()
+        away_team_name = convert_back_to_team_names(away_team).__str__()
         flash("Match Prediction between " + home_team_name + " and " + away_team_name + " is higher for: " + winner_team)
     return render_template('index.html')
     # return render_template('results.html')

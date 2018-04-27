@@ -41,15 +41,14 @@ def predict(home_team, away_team, city, toss_winner, toss_decision):
         team = 'MI'
 
     print("model->" + team)
-    if int(predictions) != convert_again(home_team).__int__():
-        if int(predictions) != convert_again(away_team).__int__():
+    if int(predictions) != convert_again(home_team).__int__() and int(predictions) != convert_again(away_team).__int__():
             print("Exception Case" + convert_again(home_team).__str__() + "" + convert_again(
                 home_team).__str__() + "" + predictions)
             winner = convert_to_shortform(calculate_ef_score(home_team, away_team))
             print("EF score data ->" + winner)
             return winner
     else:
-        return team
+        return team.__str__()
 
 
 def convert_to_shortform(winning_team):
@@ -90,7 +89,7 @@ def convert_again(home_team):
         return 2
 
 
-def convert_to_numerical_field(home_team, away_team=0, city=0, toss_winner=0, toss_decision=0):
+def convert_to_numerical_field(home_team, away_team, city, toss_winner, toss_decision):
     list = []
     if home_team == 'Kolkata':
         list.append(6)
