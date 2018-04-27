@@ -41,6 +41,8 @@ _List of all the packages that have been used in this project are freezed into r
 
 Please submit a pull request to this repo or open an issue.
 
+## Deploy to Heroku
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## Authors
 
@@ -49,4 +51,4 @@ Please submit a pull request to this repo or open an issue.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
