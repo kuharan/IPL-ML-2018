@@ -26,7 +26,7 @@ These instructions will get you a copy of the project up and running on your loc
 ```
 Pandas, sklearn, sklearn.tree, model_selection, DecisionTreeClassifier, csv, Flask, BeautifulSoup, requests, json 
 ```
-_List of all the packages that have been used in this project are freezed into requirements.txt file._
+_List of all the packages that have been used in this project are freezed into [requirements.txt](requirements.txt) file._
 ## We are Live on Heroku!
 * [Link1](https://ipl2018prediction.herokuapp.com/)
 * [Link2](https://iplprediction2018.herokuapp.com/)

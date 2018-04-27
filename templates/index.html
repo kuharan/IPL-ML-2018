@@ -36,7 +36,7 @@
 				{% for message in messages %}
 					{% if "Error" not in message[1]: %}
 						<div class="flash-msg" role="alert" align="center" style="font-size: xx-large;color:  lawngreen;font-style: normal;font-family: unset;font-weight: initial;align-items:  stretch;">
-						<strong>Result : </strong> {{ message[1] }}
+						<strong></strong> {{ message[1] }}
 						</div>
 					{% endif %}
 					{% if "Error" in message[1]: %}
@@ -47,37 +47,12 @@
 		{% endwith %}
 		<form action="/submit" method=post onsubmit="">
 			<h3 class="sub-heading-agileits">Match Details</h3>
-			<!--<div class="main-flex-w3ls-sectns">
-				<div class="field-agileinfo-spc form-w3-agile-text1">
-					<input type="text" name="Name" placeholder="First Name" required="">
-				</div>
-				<div class="field-agileinfo-spc form-w3-agile-text2">
-					<input type="text" name="Name" placeholder="Last Name" required="">
-				</div>
-			</div>
 
 			<div class="main-flex-w3ls-sectns">
-				<div class="field-agileinfo-spc form-w3-agile-text1">
-					<input type="email" name="Email" placeholder="Email" required="">
-				</div>
-				<div class="field-agileinfo-spc form-w3-agile-text2">
-					<input type="text" name="Phone no" placeholder="Phone Number" required="">
-				</div>
-			</div>
-			-->
-			<div class="main-flex-w3ls-sectns">
-				<div class="field-agileinfo-spc form-w3-agile-text1">
+				<!--<div class="field-agileinfo-spc form-w3-agile-text1">
 					<input id="datepicker" name="Text" type="text" placeholder="Date of the Match" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}"
 					    required="">
-				</div>
-				<div class="field-agileinfo-spc form-w3-agile-text2">
-					<select class="form-control" name="tossWinner" id="toss" onmousedown="whichTeamHasWonToss()">
-						<option selected disabled>Which Team Has Won The Toss</option>
-
-					</select>
-				</div>
-			</div>
-			<div class="main-flex-w3ls-sectns">
+				</div>-->
 				<div class="field-agileinfo-spc form-w3-agile-text1">
 					<select class="form-control" id="homeId" name="homeTeam" onchange="getStadium(this.value); checkSameTeam(this.value); ">
 						<option selected disabled>Home Team</option>
@@ -91,12 +66,6 @@
 						<option value="Hyderabad">SRH</option>
 					</select>
 				</div>
-				<div class="field-agileinfo-spc form-w3-agile-text2">
-						<input type="text" name="city" id="city" readonly/>
-					</select>
-				</div>
-			</div>
-			<div class="main-flex-w3ls-sectns">
 				<div class="field-agileinfo-spc form-w3-agile-text1">
 					<select class="form-control" id="awayId" name="awayTeam" onchange="checkSameTeam(this.value); ">
 						<option  selected disabled hidden>Away Team</option>
@@ -110,6 +79,21 @@
 						<option value="Hyderabad">SRH</option>
 					</select>
 				</div>
+				<div class="field-agileinfo-spc form-w3-agile-text1">
+					<select class="form-control" name="tossWinner" id="toss" onmousedown="whichTeamHasWonToss()">
+						<option selected disabled>Which Team Has Won The Toss</option>
+					</select>
+				</div>
+			</div>
+			<div class="main-flex-w3ls-sectns">
+
+				<div class="field-agileinfo-spc form-w3-agile-text1">
+						<input type="text" name="city" id="city" readonly/>
+					</select>
+				</div>
+			</div>
+			<div class="main-flex-w3ls-sectns">
+
 			</div>
 			<div class="radio-section">
 				<h6>Toss Decision?</h6>

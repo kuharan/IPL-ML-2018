@@ -1,10 +1,10 @@
 import csv
 import json
-
+import pandas as pd
 
 # Read the file Matches Data set.
-def read_csv() -> list:
-    with open('./Dataset/matches.csv', newline='') as rawFile:
+def read_csv(src) -> list:
+    with open(file=src, newline='') as rawFile:
         reader = csv.reader(rawFile)
         # for row in reader:
         #     print(row)
@@ -50,7 +50,7 @@ def replace_matched_items(word_list, dictionary):
 
 
 if "__main__" == __name__:
-    matches_list = read_csv()
+    matches_list = read_csv('./Dataset/matches.csv')
     # create a team name list
     team_list = []
     city_list = []
@@ -68,7 +68,7 @@ if "__main__" == __name__:
     team_dict = {}
     for i in range(len(team_list)):
         team_dict[team_list[i]] = var1[i]
-    print(team_dict)
+    # print(team_dict)
     with open('./jsonDumps/team_dict.json', 'w') as outfile:
         json.dump(team_dict, outfile)
 
