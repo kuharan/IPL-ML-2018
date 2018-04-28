@@ -20,7 +20,5 @@ pd.DataFrame(page_content.find_all(class_='menutitle')).to_csv("./Dataset/_news.
 clean_df = pd.read_csv('./Dataset/_news.txt', header=None).replace('<[^>]+>', '', regex=True)
 pd.DataFrame(clean_df).to_csv("./Dataset/_news.txt", index=False, header=None)
 
-# For scraping ipl-2018 match data
-url = 'http://www.cricoctopus.com/ipl-11-results-toss-winner-ipl-predictions-2018.html'
-url1='https://timesofindia.indiatimes.com/sports/cricket/ipl/top-stories/ipl-2018-full-schedule-match-timings-venues-and-more/articleshow/62927758.cms'
-print(pd.read_html(requests.get(url1).content))
+
+

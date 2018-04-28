@@ -35,7 +35,7 @@
             {% if messages %}
 				{% for message in messages %}
 					{% if "Error" not in message[1]: %}
-						<div class="flash-msg" role="alert" align="center" style="font-size: xx-large;color:  lawngreen;font-style: normal;font-family: unset;font-weight: initial;align-items:  stretch;">
+						<div class="flash-msg" role="alert" align="center" style="font-size: xx-large;color:  #5fbd00;font-style: normal;font-family: unset;font-weight: lighter;align-items:  stretch;">
 						<strong></strong> {{ message[1] }}
 						</div>
 					{% endif %}
@@ -45,6 +45,7 @@
 				{% endfor %}
         	{% endif %}
 		{% endwith %}
+        <br>
 		<form action="/submit" method=post onsubmit="">
 			<h3 class="sub-heading-agileits">Match Details</h3>
 
@@ -91,27 +92,24 @@
 						<input type="text" name="city" id="city" readonly/>
 					</select>
 				</div>
-			</div>
-			<div class="main-flex-w3ls-sectns">
-
-			</div>
-			<div class="radio-section">
-				<h6>Toss Decision?</h6>
-				<ul class="radio-buttons-w3-agileits" name="tossDecision">
-					<li>
-						<input type="radio" value="Bat" id="a-option" name="selector1">
-						<label for="a-option">Bat</label>
-						<div class="check"></div>
-					</li>
-					<li>
-						<input type="radio" value="Field" id="b-option" name="selector1">
-						<label for="b-option">Field</label>
-						<div class="check">
-							<div class="inside"></div>
-						</div>
-					</li>
-				</ul>
-			</div>
+                <div class="radio-section">
+                    <h6>Toss Decision?</h6>
+                    <ul class="radio-buttons-w3-agileits" name="tossDecision">
+                        <li>
+                            <input type="radio" value="Bat" id="a-option" name="selector1">
+                            <label for="a-option">Bat</label>
+                            <div class="check"></div>
+                        </li>
+                        <li>
+                            <input type="radio" value="Field" id="b-option" name="selector1">
+                            <label for="b-option">Field</label>
+                            <div class="check">
+                                <div class="inside"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 			<input type="submit" value="Submit">
 			<input type="reset" id="reset" value="Clear Form">
 		</form>

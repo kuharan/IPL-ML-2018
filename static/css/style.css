@@ -246,13 +246,11 @@ h1 {
 h2.sub-heading-agileits,
 h3.sub-heading-agileits {
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     color: #23b4cc;
     text-transform: capitalize;
     margin-bottom: 14px;
-    padding: 0.4vw;
-    padding: 7px;
-    font-weight: 300;
+    font-weight: unset;
     letter-spacing: 2px;
     background: rgba(255, 255, 255, 0.06);
     border-radius: 50px;
