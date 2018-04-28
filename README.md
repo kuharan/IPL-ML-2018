@@ -51,4 +51,4 @@ Please submit a pull request to this repo or open an issue.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
+This project is licensed under the GNU Affero General Public License v3.0 - see the [LICENSE.md](LICENSE) file for details.
