@@ -2,7 +2,7 @@ from prediction import predict
 from flask import Flask, render_template, request, flash
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '7d44'
+app.config['SECRET_KEY'] = 'defaultkey'
 
 
 @app.route('/', methods=['POST', 'GET'])
