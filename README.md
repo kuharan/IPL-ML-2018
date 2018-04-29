@@ -3,6 +3,10 @@ The Indian Premier League, officially Vivo Indian Premier League (_for sponsorsh
 
 This project is an attempt to predict the winner of T20 cricket matches. The objective is to predict the result (winner) of every IPL match. The project also predicts the ultimate winner of the tournament. It does not impose a specific development philosophy or framework, so you're free to clone, modify and architect your code in the way that you want and add your contribution to this repository.
 
+## We are Live on Heroku!
+* [Link1](https://ipl2018prediction.herokuapp.com/)
+* [Link2](https://iplprediction2018.herokuapp.com/)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -12,36 +16,35 @@ These instructions will get you a copy of the project up and running on your loc
 * **PyCharm**
 * _Any Web Browser_
 
-## Browser support
-
-* Chrome *(latest 2)*
-* Edge *(latest 2)*
-* Firefox *(latest 2)*
-* Internet Explorer 9+
-* Opera *(latest 2)*
-* Safari *(latest 2)*
-
-
 #### PyCharm Packages Used
 ```
 Pandas, sklearn, sklearn.tree, model_selection, DecisionTreeClassifier, csv, Flask, BeautifulSoup, requests, json 
 ```
 _List of all the packages that have been used in this project are freezed into [requirements.txt](requirements.txt) file._
-## We are Live on Heroku!
-* [Link1](https://ipl2018prediction.herokuapp.com/)
-* [Link2](https://iplprediction2018.herokuapp.com/)
+
+## Dataset 
+The dataset that we use in this project is IPL (Indian Premier League) Dataset posted on Kaggle Datasets sourced from cricsheet. And calculated Team data based on player EF scores. 
+
+#### EFscore: 
+The eigenfactor score, a metric used for ranking teams in different formats of the game. This is an alternative way of ranking teams in international Cricket, by taking into account the relative strengths of the teams. A victory against a relatively stronger team will lead to a higher EFscore as compared to a victory against a relatively weaker team.
+
+The advantage of this method is that it is a non-parametric way of ranking teams, that is we do not give any additional parameters to the algorithm for computing the team rankings.
+
+## Cloning/Forking
+See [Forking](https://help.github.com/articles/fork-a-repo/) for details.
 
 ## Built With
 
 * [PyCharm](https://www.jetbrains.com/pycharm/) - IDE used for Machine Learning Model and Scraping Websites
 * [WebStorm](https://www.jetbrains.com/webstorm/) - IDE used for the Web Application UI
 
-
 ## Contributing
 
 Please submit a pull request to this repo or open an issue.
 
-## Deploy to Heroku
+## Deployment
+Click on this button to setup a live system on Heroku Cloud!
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## Authors
