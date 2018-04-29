@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49198fd6-a69f-453f-a0cb-74f00999d9d6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/matches.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset/matches.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/matches_cleaned.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset/matches_cleaned.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsonDumps/city_dict.json" beforeDir="false" afterPath="$PROJECT_DIR$/jsonDumps/city_dict.json" afterDir="false" />
-    </list>
+    <list default="true" id="49198fd6-a69f-453f-a0cb-74f00999d9d6" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
