@@ -42,8 +42,7 @@ def predict(home_team, away_team, city, toss_winner, toss_decision):
 
     print("model->" + team)
     if int(predictions) != convert_again(home_team).__int__() and int(predictions) != convert_again(away_team).__int__():
-            print("Exception Case" + convert_again(home_team).__str__() + "" + convert_again(
-                home_team).__str__() + "" + predictions)
+            print("Exception Case")
             winner = convert_to_shortform(calculate_ef_score(home_team, away_team))
             print("EF score data ->" + winner)
             return winner
