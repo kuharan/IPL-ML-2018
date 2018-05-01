@@ -15,7 +15,7 @@ Check the option "Unknown sources".
 Tap OK on the prompt message.
 Allow installation of aps from unknown sources.
 
-[Android App Link](https://a2.files.diawi.com/app-file/2XAH2mIXkofeXPvYjdux.apk)
+[Android App Link](https://drive.google.com/file/d/1y27A_qlN9aEUUejGptflbxLCdof73srs/view?usp=sharing)
 
 ### Features
 Minimum OS version - Jelly Bean 4.1, 4.1.1
