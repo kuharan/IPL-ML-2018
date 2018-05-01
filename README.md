@@ -7,6 +7,21 @@ This project is an attempt to predict the winner of T20 cricket matches. The obj
 * [Link1](https://ipl2018prediction.herokuapp.com/)
 * [Link2](https://iplprediction2018.herokuapp.com/)
 
+## Download for Android
+If you’re greeted with, "Install blocked. For security, your phone is set to block installation of applications not obtained from Play Store" message as you try to install, follow this steps:
+
+Navigate to Setting > Security.
+Check the option "Unknown sources".
+Tap OK on the prompt message.
+Allow installation of aps from unknown sources.
+
+[Android App Link](https://a2.files.diawi.com/app-file/2XAH2mIXkofeXPvYjdux.apk)
+
+### Features
+Minimum OS version - Jelly Bean 4.1, 4.1.1
+Target OS version - Marshmallow 6.0
+Size - 4.69 MB
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
