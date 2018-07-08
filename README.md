@@ -5,7 +5,7 @@
 [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://shields.io/)
 [![GitHub forks](https://img.shields.io/github/forks/kuharan/IPL-ML-2018.svg)](https://github.com/kuharan/IPL-ML-2018/network)
 [![GitHub license](https://img.shields.io/github/license/kuharan/IPL-ML-2018.svg)](https://github.com/kuharan/IPL-ML-2018/blob/master/LICENSE)
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/kuharan/IPL-ML-2018/.svg?style=social)](https://twitter.com/intent/tweet?text=Wow&nbspThis&nbspis&nbspso&nbspCool:&url=https%3A%2F%2Fgithub.com%2Fkuharan%2FIPL-ML-2018%2F)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/kuharan/IPL-ML-2018/.svg?style=social)](https://twitter.com/intent/tweet?text=Wow!&nbsp;This&nbsp;is&nbsp;so&nbsp;Cool:&url=https%3A%2F%2Fgithub.com%2Fkuharan%2FIPL-ML-2018%2F)
 
 
 
