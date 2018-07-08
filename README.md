@@ -1,4 +1,11 @@
 # Indian Premier League Predictions - 2018
+
+[![GitHub forks](https://img.shields.io/github/forks/kuharan/IPL-ML-2018.svg)](https://github.com/kuharan/IPL-ML-2018/network)
+[![GitHub license](https://img.shields.io/github/license/kuharan/IPL-ML-2018.svg)](https://github.com/kuharan/IPL-ML-2018/blob/master/LICENSE)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/kuharan/IPL-ML-2018/.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fkuharan%2FIPL-ML-2018%2F)
+
+
+
 The Indian Premier League, officially Vivo Indian Premier League (_for sponsorship reasons_), is a professional Twenty20 cricket league in India contested during April and May of every year by teams representing Indian cities and some states.
 
 This project is an attempt to predict the winner of T20 cricket matches. The objective is to predict the result (winner) of every IPL match. The project also predicts the ultimate winner of the tournament. It does not impose a specific development philosophy or framework, so you're free to clone, modify and architect your code in the way that you want and add your contribution to this repository.
