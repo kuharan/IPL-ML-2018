@@ -1,5 +1,8 @@
 # Indian Premier League Predictions - 2018
 
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![Heroku](http://heroku-badge.herokuapp.com/?app=angularjs-crypto&style=flat&svg=1)]
+[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://shields.io/)
 [![GitHub forks](https://img.shields.io/github/forks/kuharan/IPL-ML-2018.svg)](https://github.com/kuharan/IPL-ML-2018/network)
 [![GitHub license](https://img.shields.io/github/license/kuharan/IPL-ML-2018.svg)](https://github.com/kuharan/IPL-ML-2018/blob/master/LICENSE)
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/kuharan/IPL-ML-2018/.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fkuharan%2FIPL-ML-2018%2F)
@@ -52,22 +55,16 @@ The eigenfactor score, a metric used for ranking teams in different formats of t
 
 The advantage of this method is that it is a non-parametric way of ranking teams, that is we do not give any additional parameters to the algorithm for computing the team rankings.
 
-## Cloning/Forking
-See [Forking](https://help.github.com/articles/fork-a-repo/) for details.
-
-## Built With
-
-* [PyCharm](https://www.jetbrains.com/pycharm/) - IDE used for Machine Learning Model and Scraping Websites
-* [WebStorm](https://www.jetbrains.com/webstorm/) - IDE used for the Web Application UI
-
-## Contributing
-
-Please submit a pull request to this repo or open an issue.
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
 ## Deployment
 Click on this button to setup a live system on Heroku Cloud!
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+## Contributing  [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+
+Please submit a pull request to this repo or open an issue.
 
 ## Authors
 
