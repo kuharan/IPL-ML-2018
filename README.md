@@ -1,7 +1,6 @@
 # Indian Premier League Predictions - 2018
 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
-![Heroku](http://heroku-badge.herokuapp.com/?app=angularjs-crypto&style=flat&svg=1)
 [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://shields.io/)
 [![GitHub forks](https://img.shields.io/github/forks/kuharan/IPL-ML-2018.svg)](https://github.com/kuharan/IPL-ML-2018/network)
 [![GitHub license](https://img.shields.io/github/license/kuharan/IPL-ML-2018.svg)](https://github.com/kuharan/IPL-ML-2018/blob/master/LICENSE)
@@ -23,7 +22,7 @@ If you’re greeted with, "Install blocked. For security, your phone is set to b
 Navigate to Setting > Security.
 Check the option "Unknown sources".
 Tap OK on the prompt message.
-Allow installation of aps from unknown sources.
+Allow installation of apps from unknown sources.
 
 [Android App Link](https://drive.google.com/file/d/1y27A_qlN9aEUUejGptflbxLCdof73srs/view?usp=sharing)
 
@@ -45,7 +44,7 @@ These instructions will get you a copy of the project up and running on your loc
 ```
 Pandas, sklearn, sklearn.tree, model_selection, DecisionTreeClassifier, csv, Flask, BeautifulSoup, requests, json 
 ```
-_List of all the packages that have been used in this project are freezed into [requirements.txt](requirements.txt) file._
+_List of all the packages that have been used in this project is frozen into [requirements.txt](requirements.txt) file._
 
 ## Dataset 
 The dataset that we use in this project is IPL (Indian Premier League) Dataset posted on Kaggle Datasets sourced from cricsheet. And calculated Team data based on player EF scores. 
@@ -58,7 +57,7 @@ The advantage of this method is that it is a non-parametric way of ranking teams
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
 ## Deployment
-Click on this button to setup a live system on Heroku Cloud!
+Click on this button to set up a live system on Heroku Cloud!
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
