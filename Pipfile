@@ -6,7 +6,7 @@ name = "pypi"
 [dev-packages]
 
 [packages]
-prediction = "==0.0.3"
+prediction = ">=0.0.3"
 "beautifulsoup4" = "==4.6.3"
 pandas = "==0.23.4"
 requests = "==2.20.0"
