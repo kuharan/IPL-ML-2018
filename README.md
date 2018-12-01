@@ -65,11 +65,16 @@ Click on this button to set up a live system on Heroku Cloud!
 
 Please submit a pull request to this repo or open an issue.
 
-## Authors
-
+## Authors 
+[![Maintainers Wanted](https://img.shields.io/badge/maintainers-wanted-red.svg)](https://github.com/pickhardt/maintainers-wanted)
 * **Vishal Yadav** - [Vishal Yadav](https://github.com/vishal-kr-yadav)
 * **Kuharan Bhowmik** - [Kuharan Bhowmik](https://github.com/kuharan)
+
+## Security Update
+#### CVE-2018-18074 Detail [![NATIONAL VULNERABILITY DATABASE](https://nvd.nist.gov/vuln/detail/CVE-2018-18074)]
+The Requests package before 2.20.0 for Python sends an HTTP Authorization header to an http URI upon receiving a same-hostname https-to-http redirect, which makes it easier for remote attackers to discover credentials by sniffing the network. This project now uses requests 2.20.0.
 
 ## License
 
 This project is licensed under the GNU Affero General Public License v3.0 - see the [LICENSE.md](LICENSE) file for details.
+
