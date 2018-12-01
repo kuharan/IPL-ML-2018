@@ -2,5 +2,5 @@ Flask==1.0.2
 prediction==0.0.3
 beautifulsoup4==4.6.3
 pandas==0.23.4
-Requests>=2.20.0
+Requests==2.20.0
 scikit_learn==0.19.2
