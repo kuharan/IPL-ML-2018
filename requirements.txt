@@ -6,3 +6,4 @@ Requests==2.20.0
 scikit_learn==0.19.2
 gunicorn
 scipy
+django>=2.0.10
