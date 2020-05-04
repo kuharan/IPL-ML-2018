@@ -39,7 +39,7 @@ These instructions will get you a copy of the project up and running on your loc
 * **PyCharm**
 * _Any Web Browser_
 
-#### PyCharm Packages Used
+#### Modules Used
 ```
 Pandas, sklearn, sklearn.tree, model_selection, DecisionTreeClassifier, csv, Flask, BeautifulSoup, requests, json 
 ```
@@ -52,8 +52,6 @@ The dataset that we use in this project is IPL (Indian Premier League) Dataset p
 The eigenfactor score, a metric used for ranking teams in different formats of the game. This is an alternative way of ranking teams in international Cricket, by taking into account the relative strengths of the teams. A victory against a relatively stronger team will lead to a higher EFscore as compared to a victory against a relatively weaker team.
 
 The advantage of this method is that it is a non-parametric way of ranking teams, that is we do not give any additional parameters to the algorithm for computing the team rankings.
-
-[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
 ## Deployment
 Click on this button to set up a live system on Heroku Cloud!
