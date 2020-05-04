@@ -5,6 +5,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/kuharan/IPL-ML-2018.svg)](https://github.com/kuharan/IPL-ML-2018/network)
 [![GitHub license](https://img.shields.io/github/license/kuharan/IPL-ML-2018.svg)](https://github.com/kuharan/IPL-ML-2018/blob/master/LICENSE)
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/kuharan/IPL-ML-2018/.svg?style=social)](https://twitter.com/intent/tweet?text=Wow!&nbsp;This&nbsp;is&nbsp;so&nbsp;Cool:&url=https%3A%2F%2Fgithub.com%2Fkuharan%2FIPL-ML-2018%2F)
+[![Maintainers Wanted](https://img.shields.io/badge/maintainers-wanted-red.svg)](https://github.com/pickhardt/maintainers-wanted)
 
 
 
@@ -23,8 +24,6 @@ Navigate to Setting > Security.
 Check the option "Unknown sources".
 Tap OK on the prompt message.
 Allow installation of apps from unknown sources.
-
-[Android App Link](https://drive.google.com/file/d/1y27A_qlN9aEUUejGptflbxLCdof73srs/view?usp=sharing)
 
 ### Features
 Minimum OS version - Jelly Bean 4.1, 4.1.1
@@ -66,13 +65,12 @@ Click on this button to set up a live system on Heroku Cloud!
 Please submit a pull request to this repo or open an issue.
 
 ## Authors 
-[![Maintainers Wanted](https://img.shields.io/badge/maintainers-wanted-red.svg)](https://github.com/pickhardt/maintainers-wanted)
 * **Vishal Yadav** - [Vishal Yadav](https://github.com/vishal-kr-yadav)
 * **Kuharan Bhowmik** - [Kuharan Bhowmik](https://github.com/kuharan)
 
-## Security Update
-#### CVE-2018-18074 Detail [![NATIONAL VULNERABILITY DATABASE](https://nvd.nist.gov/vuln/detail/CVE-2018-18074)]
-The Requests package before 2.20.0 for Python sends an HTTP Authorization header to an http URI upon receiving a same-hostname https-to-http redirect, which makes it easier for remote attackers to discover credentials by sniffing the network. This project now uses requests 2.20.0.
+[![Maintainers Wanted](https://img.shields.io/badge/maintainers-wanted-red.svg)](https://github.com/pickhardt/maintainers-wanted)
+
+I am looking for people to maintain this project and collaborate to increase the accuracy. I am open to suggestions and collaboration. drop me an email (kuharan.bhowmik@gmail.com)
 
 ## License
 
