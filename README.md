@@ -22,6 +22,7 @@ This project is an attempt to predict the winner of T20 cricket matches. The obj
 Minimum OS version - Jelly Bean 4.1, 4.1.1
 Target OS version - Marshmallow 6.0
 Size - 4.69 MB
+_(Removed the android app)_
 
 ## Getting Started
 
