@@ -1,6 +1,5 @@
 # Indian Premier League Predictions - 2018
 
-![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fgithub.com%2Fkuharan%2FIPL-ML-2018)
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://shields.io/)
 [![GitHub forks](https://img.shields.io/github/forks/kuharan/IPL-ML-2018.svg)](https://github.com/kuharan/IPL-ML-2018/network)
@@ -61,7 +60,15 @@ Please submit a pull request to this repo or open an issue.
 
 [![Maintainers Wanted](https://img.shields.io/badge/maintainers-wanted-red.svg)](https://github.com/pickhardt/maintainers-wanted)
 
-I am looking for people to maintain this project and collaborate to increase the accuracy. I am open to suggestions and collaboration. drop me an email (kuharan.bhowmik@gmail.com)
+I am looking for people to maintain this project and collaborate to increase the accuracy. I am open to suggestions and collaboration. drop me an email (<span>kuharan</span>
+<span>.</span>
+<span>bhowmik</span>
+<span>@</span>
+<span>gm</span>
+<span>ail</span>
+<span>.</span>
+<span>com</span>
+)
 
 ## License
 
